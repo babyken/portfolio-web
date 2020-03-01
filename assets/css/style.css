@@ -1,0 +1,26 @@
+.container {
+    transition: all .5s cubic-bezier(.55,0,.1,1);
+}
+
+.content {
+    font-family: 'Source Code Pro',Arial, 'Roboto', 'Times New Roman'; 
+}
+
+.slide-left-enter,
+.slide-right-leave-active {
+  opacity: 0;
+  transform: translate(30px, 0);
+}
+
+.slide-left-leave-active,
+.slide-right-enter {
+  opacity: 0;
+  transform: translate(-30px, 0);
+}
+
+.page-enter-active, .page-leave-active {
+    transition: opacity .35s
+}
+.page-enter, .page-leave-active {
+    opacity: 0
+}
